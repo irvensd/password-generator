@@ -1,6 +1,6 @@
 # password-generator
 
-Purpose
+Purpose -
 The purose for this project was provide the company a program that generates a password that meets certain criteria so that
 they can create a strong password that provides greater security.
 
