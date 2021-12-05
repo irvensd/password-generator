@@ -30,20 +30,24 @@ function generatePass() {
      if (confirm("Would you like to include special characters?")){
           Array.prototype.push.apply(PasswordGenerator, specialCharacters);
   }
-  // Promtp for if user says no to lowercase, uppercase, numeric and special characters --- or else the password generator runs. 
+  // Prompt for if user says no to lowercase, uppercase, numeric and special characters --- or else the password generator runs. 
       if  (lowerCase===false && upperCase===false && numeric=== false && specialCharacters===false) {
           alert("You must select at least one character type!");
           lowerCase = confirm("Would you like to use lowercase letters?");
           upperCase = confirm("Would you like to use uppercase letters?");
           numeric = confirm("Would you like to use numbers?");
           specialCharacters = confirm("Would you like to use special characters?");
-   } else {
+   } 
+   // If one is equal to true then this else statement runs which is the for loop which randomizes the characters. 
+   else {
           for(var i=0;  i<passCriteria; i++){
           var random = Math.floor(Math.random()*PasswordGenerator.length);
           passwordResult += PasswordGenerator[random];
     }
     }
 }
+
+// Prints the result back to the user. 
       document.getElementById("password").innerHTML = passwordResult;
       
 }
