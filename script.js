@@ -46,7 +46,7 @@ function generatePass() {
 }
       document.getElementById("password").innerHTML = passwordResult;
       
-};
+}
 
 // Array.prototype.push.apply was taken from https://codesource.io/working-with-javascript-array-push-method/ after one of my friends told me to look it up after struggling with this. 
 //Using Array.prototype.push.apply() method we are merging 2 arrays into one. 
